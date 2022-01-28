@@ -4,6 +4,9 @@ This package contains functions:
 1. `cheat(assignment)`
 2. `remind_me()` 
 
+Also included in this repository is function:
+`make_art(seed = 1)`
+
 ## Details `cheat(assignment)`
 #### Cheat on Assignment 3
 Function returns solutions for 3.1 homework; assignments 1, 2, 6 and 10.
@@ -48,4 +51,20 @@ The package also contains `remind_me.Rd` help file that can be run with:
 ###### Example
 ```{r, eval=FALSE}
 remind_me()
+```
+
+## Details `make_art(seed = 1)`
+#### Make random art
+Function returns random art and saves it as a .png file in your directory.
+###### Usage
+`make_art(seed = 1)`
+###### Arguments
+`seed`  optional. Sets a random set.seed of your choice. Default is 1. 
+###### Details
+The function uses `aRtsy` package. If errors occur please install these packages using `install.packages()`.
+###### Note
+Might take a while for R to produce an image. 
+###### Example
+```{r, eval=FALSE}
+make_art(2)
 ```
